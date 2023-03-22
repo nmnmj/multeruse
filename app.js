@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT;
 const DATABASE_URL = process.env.DATABASE_URL;
 app.use(cors());
-app.use(urlencoded({extended:true}))
+app.use(express.urlencoded({extended:true}))
 
 app.use(express.static("public/uploads/pimage"))
 //for form data
