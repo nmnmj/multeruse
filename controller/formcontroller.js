@@ -10,8 +10,8 @@ class formcontroller {
   };
 
   static saveProfile = async (req, res) => {
-    const { name, email } = req.body;
-    const pimage = req.files["pimage"][0].filename;
+    const { name, email, pimage } = req.body;
+    const pimg = req.files["pimage"][0].filename;
     const rdoc = req.files["rdoc"][0].filename;
     let r = "";
     if (name && email && pimage && rdoc) {
