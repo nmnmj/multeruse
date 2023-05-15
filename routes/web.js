@@ -4,7 +4,7 @@ import upload from '../middlewares/uploadm.js'
 
 const router = express.Router()
 
-//route level midlleware
+// route level midlleware
 router.use("/",upload.fields([
     {name:"pimage", maxCount:1},
     {name:"rdoc", maxCount:1},
