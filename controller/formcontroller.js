@@ -12,7 +12,7 @@ class formcontroller {
   static saveProfile = async (req, res) => {
     let { name, email, pimage, rdoc } = req.body;
 
-    console.log(req.body)
+    // console.log(req.body)
     // const pimg = req.files["pimage"][0].filename;
     // const rdoc = req.files["rdoc"][0].filename;
     let r = "";
@@ -24,7 +24,7 @@ class formcontroller {
         rdoc,
       });
       r = await doc.save();
-      console.log("r"+r)
+      // console.log("r"+r)
     }
     // r=r.name
     // console.log(req.files)
